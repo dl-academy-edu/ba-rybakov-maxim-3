@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,300;0,700;1,300;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- <link href="/static/fonts/stylesheet.css" rel="stylesheet" /> -->
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+</head>
+<body>
+    @@include('header/index.html')
+    <main>
+        <h1 class="home-page-title visually-hidden">About author</h1>
+        @@include('title-block/index.html', {
+            "h2": "Antonina Antoninovna",
+            "description": "Future front-end developer 23 years old, Tolyatti",
+        })
+        @@include('slider/index.html')
+        @@include('about-me/index.html')
+        <section class="skills container">
+            <h2 class="skills__title">Skills</h2>
+            <p class="skills__description">I work in such programs as</p>
+            <div class="skills__fieldset-wrapper">
+                <fieldset class="skills__fieldset">
+                    @@include('skill-blocks/index.html', {
+                        "img": "/static/images/html-5.png",
+                        "img2x": "/static/images/html-5-2x.png",
+                        "legend": "HTML 5",
+                        "value-id": "skill-value_html",
+                        "input-id": "skill-input_html",
+                        "input-background": "skill__input_background-html",
+                        "value": "85",
+                    })
+                    @@include('skill-blocks/index.html', {
+                        "img": "/static/images/css-scss.png",
+                        "img2x": "/static/images/css-scss2x.png",
+                        "legend": "CSS/SCSS",
+                        "value-id": "skill-value_css",
+                        "input-id": "skill-input_css",
+                        "input-background": "skill__input_background-css",
+                        "value": "55",
+                    })
+                    @@include('skill-blocks/index.html', {
+                        "img": "/static/images/javascript.png",
+                        "img2x": "/static/images/javascript2x.png",
+                        "legend": "JavaScript",
+                        "value-id": "skill-value_js",
+                        "input-id": "skill-input_js",
+                        "input-background": "skill__input_background-js",
+                        "value": "5",
+                    })
+                    @@include('skill-blocks/index.html', {
+                        "img": "/static/images/github.png",
+                        "img2x": "/static/images/github2x.png",
+                        "legend": "Git/GitHub",
+                        "value-id": "skill-value_github",
+                        "input-id": "skill-input_github",
+                        "input-background": "skill__input_background-github",
+                        "value": "15",
+                    })
+                    @@include('skill-blocks/index.html', {
+                        "img": "/static/images/figma.png",
+                        "img2x": "/static/images/figma2x.png",
+                        "legend": "Figma",
+                        "value-id": "skill-value_figma",
+                        "input-id": "skill-input_figma",
+                        "input-background": "skill__input_background-figma",
+                        "value": "80",
+                    })
+                </fieldset>
+            </div>
+        </section>
+        @@include('portfolio/index.html')
+    </main>
+    @@include('footer/index.html')
+    @@include('main-popups/index.html')
+    <script src="/script.js"></script>
+</body>
+</html>

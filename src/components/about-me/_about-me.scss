@@ -1,0 +1,65 @@
+.about-me {
+    padding: 0 20px 0;
+    background-color: #F6F6F6;
+    @media (min-width: $sm) {
+        padding: 0 20px 0px;
+    }
+    &__title {
+        display: block;
+        margin: 0;
+        padding-top: 40px;
+        text-align: center;
+        font-family: 'Gilroy';
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 41px;
+        @media (min-width: $sm) {
+            padding-top: 60px;
+        }
+    }
+    &__info {
+        display: block;
+        max-width: 578px;
+        margin: 30px auto 0px auto;
+        padding-bottom: 60px;
+        @media (min-width: $sm) {
+            margin-top: 50px;
+            margin-bottom: 0px;
+            padding-bottom: 82px;
+        }
+        &_text {
+            position: relative;
+            max-width: 478px;
+            margin-top: 40px;
+            padding: 15px 15px 15px 15px;
+            border: 2.5px solid #070707;
+            font-family: 'Gilroy';
+            font-size: 18px;
+            line-height: 21px;
+            &:nth-child(odd) {
+                align-items: flex-start;
+                &::before {
+                    right: 25px;
+                }
+            }
+            &:nth-child(even) {
+                margin-left: auto;
+                &::before {
+                    left: 25px;
+                }
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -14px;
+                width: 24px;
+                height: 25px;
+                border: 2.5px solid #070707;
+                border-right: 0;
+                border-bottom: 0;
+                transform: rotate(226deg);
+                background: #F6F6F6;
+            }
+        }
+    }
+}

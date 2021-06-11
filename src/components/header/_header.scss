@@ -1,0 +1,70 @@
+
+.header {
+  
+  &__menu {
+    display: none;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #828282;
+    @media (min-width: $sm) {
+      display: flex;
+    }
+    @media (min-width: $lg) {
+      padding-top: 33px;
+      padding-bottom: 32px;
+    }
+    &_home-link {
+      font-family: 'Gilroy';
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &_link {
+      border: none;
+      background: none;
+      font-family: 'Gilroy';
+      font-size: 18px;
+      line-height: 22px;
+      color: #828282;
+      cursor: pointer;
+    }
+    &_ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &_li {
+      margin-left: 20px;
+    }
+  }
+  &__mobile-menu {
+    display: block;
+    margin-top: 50px;
+    margin-right: 13px;
+    font-family: 'Gilroy';
+    font-size: 34px;
+    line-height: 41px;
+    @media (min-width: $sm) {
+      display: none;
+    }
+    &_close-button {
+      margin-bottom: 146px;
+      padding: 0;
+      background: none;
+      border: none;
+      background-color: none;
+    }
+    &_li {
+      text-align: right;
+    }
+    &_link {
+      display: block;
+      padding-right: 7px;
+      padding-top: 40px;
+    }
+    &_nav {
+      color: #828282;
+    }
+  }
+}

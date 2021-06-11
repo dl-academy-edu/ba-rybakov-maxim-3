@@ -1,0 +1,34 @@
+.slider {
+    &__img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    &__pagination {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 36px;
+        @media (min-width: $sm) {
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+        @media (min-width: $lg) {
+            margin-top: 30px;
+        }
+        &_arrow,
+        &_button {
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        &_ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &_li {
+            padding: 0 3.5px;
+        }
+    }
+}
