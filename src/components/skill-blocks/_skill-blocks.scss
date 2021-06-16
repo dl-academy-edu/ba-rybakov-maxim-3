@@ -1,0 +1,179 @@
+.skills {
+    &__title {
+        display: block;
+        margin: 0;
+        padding-top: 40px;
+        text-align: center;
+        font-family: 'Gilroy';
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 41px;
+        @media (min-width: $sm) {
+            padding-top: 60px;
+        }
+    }
+    &__description {
+        display: block;
+        margin: 0;
+        padding-top: 10px;
+        text-align: center;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        @media (min-width: $sm) {
+            padding-top: 20px;
+        }
+    }
+    &__fieldset-wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding-bottom: 40px;
+        @media (min-width: $sm) {
+            padding-bottom: 60px;
+        }
+    }
+    &__fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0 -10px;
+        border: none;
+        @media (min-width: $sm) {
+            padding-top: 10px;
+        }
+        @media (min-width: $lg) {
+            margin: 0 -12.5px;
+        }
+    }
+}
+
+
+.skill {
+    &__block {
+        width: 130px;
+        margin: 0 10px;
+        padding-top: 40px;
+        @media (min-width: $sm) {
+            width: 147px;
+        }
+        @media (min-width: $lg) {
+            width: 180px;
+            margin: 0 12.5px;
+        }
+    }
+    &__img {
+        display: block;
+        width: auto;
+        height: 90px;
+        margin: 0 auto;
+    }
+    &__name {
+        display: block;
+        margin: 0;
+        padding-top: 20px;
+        text-align: center;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #828282;
+        @media (min-width: $lg) {
+            font-weight: bold;
+        }
+    }
+    &__input-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 24px;
+    }
+    &__value {
+        margin: 0;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #828282;
+        @media (min-width: $lg) {
+            font-weight: bold;
+        }
+    }
+    &__input {
+        -webkit-appearance: none;
+        width: 94px;
+        height: 9px;
+        margin: 0;
+        cursor: pointer;
+        &_background-html {
+            background: linear-gradient(90deg, rgba(7, 7, 7, 1) 85%, rgba(229, 229, 229, 1) 85%);
+        }
+        &_background-css {
+            background: linear-gradient(90deg, rgba(7, 7, 7, 1) 55%, rgba(229, 229, 229, 1) 55%);
+        }
+        &_background-js {
+            background: linear-gradient(90deg, rgba(7, 7, 7, 1) 5%, rgba(229, 229, 229, 1) 5%);
+        }
+        &_background-github {
+            background: linear-gradient(90deg, rgba(7, 7, 7, 1) 15%, rgba(229, 229, 229, 1) 15%);
+        }
+        &_background-figma {
+            background: linear-gradient(90deg, rgba(7, 7, 7, 1) 80%, rgba(229, 229, 229, 1) 80%);
+        }
+        @media (min-width: $sm) {
+            width: 111px;
+        }
+        @media (min-width: $lg) {
+            width: 142px;
+        }
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 14px;
+            cursor: pointer;
+            outline: none;
+            box-shadow: 0 0 0 0 rgba(98,0,238,.1);
+            transition: .3s ease-in-out;
+            &:hover {
+                width: 10px;
+                height: 14px;
+                background-color: #6200ee;
+                border-radius: 50%;
+                box-shadow: 0 0 0 5px rgba(98,0,238,.2);
+            }
+            &:active {
+                background-color: #6200ee;
+                border-radius: 50%;
+                box-shadow: 0 0 0 10px rgba(98,0,238,.2);
+            }
+        }
+        &::-moz-range-thumb {
+            width: 20px;
+            height: 14px;
+            cursor: pointer;
+            outline: none;
+            box-shadow: 0 0 0 0 rgba(98,0,238,.1);
+            transition: .3s ease-in-out;
+            &:hover {
+                width: 10px;
+                height: 14px;
+                background-color: #6200ee;
+                border-radius: 50%;
+                box-shadow: 0 0 0 5px rgba(98,0,238,.2);
+            }
+            &:active {
+                background-color: #6200ee;
+                border-radius: 50%;
+                box-shadow: 0 0 0 10px rgba(98,0,238,.2);
+            }
+        }
+    }
+}
+
+
+

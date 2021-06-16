@@ -1,0 +1,83 @@
+
+body {
+  margin: 0;
+  font-family: 'Gilroy', 'Arial', 'sans-serif';
+  font-style: normal;
+  font-weight: normal;
+  color: #070707;
+}
+
+$transition-duration: .4s;
+$xl: 1400px;
+$lg: 1280px;
+$md: 1023px;
+$sm: 740px;
+$xs: 300px;
+
+.img {
+  max-width: 100%;
+}
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  @media (min-width: $sm) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  @media (min-width: $lg) {
+    padding-right: 220px;
+    padding-left: 220px;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-family: 'Gilroy', 'Arial', 'sans-serif';
+  font-style: normal;
+  font-weight: normal;
+  color: #070707;
+  text-decoration: none;
+}
+
+// .display-none {
+//   display: none;
+// }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@import "/src/static/fonts/stylesheet.css";
+@import "./header/header";
+@import "./footer/footer";
+@import "./title-block/title-block";
+@import "./slider/slider";
+@import "./about-me/about-me";
+@import "./about-me/about-me";
+@import "./skill-blocks/skill-blocks";
+@import "./portfolio/portfolio";
+@import "./main-popups/main-popups";
+

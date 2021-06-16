@@ -1,0 +1,89 @@
+/*Footer*/
+
+.footer {
+  padding-bottom: 60px;
+  text-align: center;
+  &__title {
+    margin: 0;
+    padding-top: 60px;
+    font-family: 'Gilroy';
+    font-size: 34px;
+    line-height: 41px;
+  }
+  &__description {
+    max-width: 269px;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    line-height: 21px;
+  }
+  &__message_button {
+    margin-top: 30px;
+    padding: 10px 29px;
+    background: #070707;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    line-height: 22px;
+    color: #F6F6F6;
+    cursor: pointer;
+  }
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 300px;
+    margin: 40px auto 30px;
+    @media (min-width: $sm) {
+      max-width: 323px;
+    }
+    &_button {
+      display: block;
+      margin: 0 5px 10px 5px;
+      padding: 8px 17px;
+      border: 2.5px solid #070707;
+      box-sizing: border-box;
+      border-radius: 30px;
+      background: none;
+      font-family: 'Gilroy';
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      cursor: pointer;
+    }
+  }
+  &__author-info,
+  &__author-info_company,
+  &__author-info_creator {
+    margin: 0;
+    margin-top: 5px;
+    font-family: 'Gilroy';
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+    &_company {
+      border-bottom: 1px dashed #828282;
+    }
+  }
+}
+
+.scroll-up {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
+  transform: translateY(25px);
+  &__svg {
+    transform: rotate(-90deg);
+  }
+  &_active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
